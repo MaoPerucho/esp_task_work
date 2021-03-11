@@ -31,6 +31,7 @@ void tarea4 (void *pvParameter)
            zumbador=1;
            ets_delay_s(10);
            zumbador=0;
+           PedMode=0;
         }
     }
 }
