@@ -1,11 +1,26 @@
-#include <driver/gpio.h>
-#include <freertos/FreeRTOS.h>
-#include <freertos/task.h>
-#include <esp_system.h>
-
-
-
-void app_main()
+void imprimir()
 {
-    
+	while(true)
+	
+	{
+		
+		if(Cnt!=99)
+		{
+			printf(Cnt);
+		}
+		else
+		{
+			pintf("   ");
+		}
+			if(Cnt2!=99)
+		{
+			printf(Cnt2);
+		}
+		else
+		{
+			pintf("   ");
+		}
+		
+	}
+	
 }
