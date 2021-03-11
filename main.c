@@ -1,11 +1,13 @@
-#include <driver/gpio.h>
-#include <freertos/FreeRTOS.h>
-#include <freertos/task.h>
-#include <esp_system.h>
-
-
-
-void app_main()
+void tarea5(void*pvParameter)
 {
-    
+	
+	while (true)
+	{
+		PB=gpio_get_level(pinNumber)// se coloca el pin que se defina 
+
+		if (PB==1)
+		{
+			PedMode=1;
+		}
+	}
 }
