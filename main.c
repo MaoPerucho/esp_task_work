@@ -15,13 +15,7 @@ void tarea4 (void *pvParameter)
            GreenStart1=0;
            time.s=0;
         }
-        else 
-        {
-           GreenStart1=1;
-           RedStart2=1;
-           RedStart1=0;
-           GreenStart2=0;
-        }
+
         if (PedMode==1 & time.s=>Total.time)
         {
            GreenStart2=0;
