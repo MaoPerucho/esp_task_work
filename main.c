@@ -248,6 +248,11 @@ void app_main()
 	AmbarDuration=4;
 	AmbarRed=2;
 	GreenDuration=15;
+	
+	FaseVerde1=1;
+	FaseVerde2=0;
+	FaseRoja1=0;
+	FaseRoja2=1;
 
 
 	RedDuration2=21;
