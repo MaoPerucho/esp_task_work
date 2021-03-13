@@ -1,13 +1,10 @@
-void tarea5(void*pvParameter)
+//Dario Rosso
+void tarea5 (void *pvParameter)
 {
-	
-	while (true)
+	while(1){
+	if (gpio_get_level(GPIO_NUM_2)==1)
 	{
-		PB=gpio_get_level(pinNumber)// se coloca el pin que se defina 
-
-		if (PB==1)
-		{
-			PedMode=1;
-		}
+		PedMode=1;
+	}
 	}
 }
