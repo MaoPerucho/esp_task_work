@@ -1,23 +1,30 @@
-void task_1(void)
+//Nicolas Pinilla
+void tarea1 (void *pvParameter)
 {
-	while (true)
+	while(1){
+	if(RedDuration == 0 && AmbarDuration == 0)
 	{
-	if (R1_b=true && Amb1_b=true)
-	{
-		printf("NORTE_str VERDE");
-	}
-if (Ambr_b=true && V1_b=true)
-	{
-		printf("NORTE_str ROJO");
-	}
-if (R2_b=true && Amb2_b=true)
-	{
-		printf("ESTE_str VERDE");
-	}
-if (V2_b=true && Amb2_b=true)
-	{
-		printf("ESTE_str ROJO");
-	}
+		printf("Norte Str : Verde");
 
 	}
+	else if (GreenDuration == 0 && AmbarDuration == 0)
+	{
+		printf("Norte Str: Rojo");
+	}
+
+
+
+
+	if(RedDuration2 == 0 && AmbarDuration2 == 0)
+	{
+		printf("Este Str : Verde");
+
+	}
+	else if (GreenDuration2 == 0 && AmbarDuration2 == 0)
+	{
+		printf("Este Str: Rojo");
+	}
+	}
+
+
 }
