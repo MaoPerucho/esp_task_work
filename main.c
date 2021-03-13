@@ -1,71 +1,58 @@
-void controlleds()
+//Diego duarte
+void tarea2 (void *pvParameter)
 {
-	while(true)
+	while(1){
+	if (RedStart == 1)
 	{
-		Cnt=descontar(Cnt);
-		Cnt2=descontar(Cnt2);
-		
-		if( RedStart1==1)
+		Cnt = RedDuration;
+		printf("RED: %f ",Cnt);
+		if (Cnt == 0)
 		{
-			Cnt=RedDuration1;
-			RedStart1=0;
-			
-		}
-		else
-		{
-		if( GreenStart1==1)
-		{
-			Cnt=GreenDuration1;
-			GreenStart1=0;
-			
-		}
-		else
-		{
-		
-		if( RedStart2==1)
-		{
-			Cnt2=RedDuration2;
-			RedStart2=0;
-			
-		}
-		else
-		{
-			if( GreenStart2==1)
-			{
-				Cnt2=GreenDuration2;
-				GreenStart2=0;
-			}
-		}
-		}
+			Cnt=99;
 		}
 	}
-		
-		
-	}
-	
-	
-	
-	
-}
-int descontar(int Cnt)
-{
-	
-	if(Cnt!=99)
+
+	if (GreenStart == 1)
 	{
-		if(Cnt==0)
-	
+		Cnt = GreenDuration;
+		printf("GREEN: %f ",Cnt);
+		if (Cnt == 0)
 		{
-		  Cnt=99;
-		
-		}	
-		else
-		{
-			delay(1000);
-			Cnt=Cnt-1;
+			Cnt=99;
 		}
-		
 	}
-	return Cnt;
-	
-	
+
+	if (Cnt == 99)
+	{
+		printf("           ");
+	}
+
+
+
+	if (RedStart2 == 1)
+	{
+		Cnt2 = RedDuration2;
+		printf("RED2: %f ",Cnt2);
+		if (Cnt2 == 0)
+		{
+			Cnt2=99;
+		}
+	}
+
+	if (GreenStart2 == 1)
+	{
+		Cnt2 = GreenDuration2;
+		printf("GREEN2: %f ",Cnt2);
+		if (Cnt2 == 0)
+		{
+			Cnt2=99;
+		}
+	}
+
+	if (Cnt2 == 99)
+	{
+		printf("           ");
+	}
+	}
+
 }
