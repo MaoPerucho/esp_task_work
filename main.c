@@ -1,26 +1,15 @@
-void imprimir()
+//Kevin Revueltas
+void tarea3 (void *pvParameter)
 {
-	while(true)
-	
+	while(1){
+	if(Cnt != 99)
 	{
-		
-		if(Cnt!=99)
-		{
-			printf(Cnt);
-		}
-		else
-		{
-			pintf("   ");
-		}
-			if(Cnt2!=99)
-		{
-			printf(Cnt2);
-		}
-		else
-		{
-			pintf("   ");
-		}
-		
+		printf("%f",Cnt);
 	}
-	
+
+	if(Cnt2 != 99)
+	{
+		printf("%f",Cnt2);
+	}
+	}
 }
